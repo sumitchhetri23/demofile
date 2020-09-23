@@ -1,0 +1,22 @@
+.slider .slick-slide{
+  padding-left: 30px;
+  margin: 0 15px;
+  border: 0px solid #333;
+  text-align: center;
+  position: relative;
+  max-height:240px;
+  max-width: 320px;
+}
+.slider .slick-slide h3{
+  font-size: 28px;
+  font-weight: 300;
+  padding-right: 58px;
+  color: #333;
+}
+.slider .slick-slide img{
+  transition: all ease 0.5s;
+}
+.slider .slick-slide:hover img{
+  opacity: 0.5;
+  transform: scale(1.1);
+}
