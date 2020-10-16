@@ -8,11 +8,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+
 body {
-    margin-top: 15px;
-    font-family: 'Roboto', sans-serif;
- 
-}
+        margin-top: 0px;
+    }
 
 .page-footer {
     background-color: black;
@@ -59,7 +58,7 @@ color: white;
 .container1 {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 15px;
+            padding: 5px;
             display: flex;
           }
           .left-column {
@@ -138,44 +137,135 @@ text-decoration: none;
   font-size: 20px;
 font-weight: 30;
 color: #43474D;
-margin-right: 0px;}
+margin-right: 0px;
+}
 .related-products{
     margin-left: 60px;
 }
 .see-more {
   text-align:right;
   margin-left:1100px;
-  text-decoration:underline;
-  color:black;
+}
+@media screen and (max-width: 992px) {
+  .see-more {
+    text-decoration: none;
+margin-left: 520px;
+  }
+  
+.container1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+          }
+          .left-column {
+  width: 75%;
+  position: relative;
+}
+ 
+.right-column {
+    width: 45%;
+  margin-top: 50px;
+}
+.left-column img {
+    margin-top: 60px;
+    margin-left: 20px;
+  max-width: 70%;
+  max-height: 70%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+.left-column img:hover {
+    margin-top: 60px;
+    margin-left:20px;
+  max-width: 90%;
+  max-height: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #1D1E1F;
+  letter-spacing: -2px;
+}
+.product-description a {
+  font-size: 20px;
+  color: #1D1E1F;
+text-decoration: none;
+}
+.product-description a:hover {
+  font-size: 20px;
+  color: #0432BE;
+  text-decoration: underline;
+}
+.product-description p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #1D1E1F;
+  line-height: 24px;
+}
+.features li{
+  font-size: 15px;
+  font-weight: 300;
+  color: #1D1E1F;
+  line-height: 24px;
+}
+.purposes li{
+  font-size: 15px;
+  font-weight: 300;
+  color: #1D1E1F;
+  line-height: 24px;
+}
+  .product-price i{
+  font-size: 18px;
+font-weight: 30;
+color: #43474D;
+margin-right: 0px;
+}
+.related-products{
+    margin-left: 30px;
+}
+
 }
 </style>
-<ul class="nav nav-pills">
-  &nbsp&nbsp&nbsp&nbsp&nbsp    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="navbar-brand" href="abchardware.html">ABC Hardware</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <li class="nav-item">
-      <a class="nav-link" href="abchardware.html">Home</a>
-  </li>&nbsp&nbsp
-  <li class="nav-item">
-    <a class="nav-link" href="ourstore.html">Our Store</a>
-  </li>&nbsp&nbsp
-  <li class="nav-item">
-    <a class="nav-link" href="onlinestore.html">Online Store</a>
-  </li>&nbsp&nbsp
-  <li class="nav-item">
-    <a class="nav-link" href="contactus.html">Contact Us</a>
-  </li>&nbsp&nbsp
-  <li class="nav-item">
-      <a class="nav-link" href="aboutus.html">About Us</a>
-    </li>  
-</ul>    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand nav-link" href="abchardware.html">ABC Hardware</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="abchardware.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ourstore.html">Our Store</a>
+        <li class="nav-item">
+          <a class="nav-link" href="onlinestore.html">Online Store</a>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>      
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About Us</a>      
+  </li>
+</ul>
+  </div>
+</nav>
 </head>
     <body>
       <section>
@@ -245,7 +335,7 @@ margin-right: 0px;}
             <div class="title">
                 <a href="#">Product1</a>
             </div>
-            <div class="category"><a href="#" class="allcategories"><strong>Category</a></strong><b>&nbsp:</b>&nbsp&nbsp&nbsp<a href="#" class="product-categories"><strong>CategoryA</strong></a></div>   
+            <div class="category"><a href="category.html" class="allcategories"><strong>Category</a></strong><b>&nbsp:</b>&nbsp&nbsp&nbsp<a href="#" class="product-categories"><strong>CategoryA</strong></a></div>   
             <div class="text">Describe your product2 including its features...</div>
             <p class="product-price"><b><i>Price: Rs. 4000</i></b></p>
         </div>
@@ -256,7 +346,7 @@ margin-right: 0px;}
           <div class="title">
               <a href="#">Product1</a>
           </div>
-          <div class="category"><a href="#" class="allcategories"><strong>Category</a></strong><b>&nbsp:</b>&nbsp&nbsp&nbsp<a href="#" class="product-categories"><strong>CategoryA</strong></a></div>   
+          <div class="category"><a href="category.html" class="allcategories"><strong>Category</a></strong><b>&nbsp:</b>&nbsp&nbsp&nbsp<a href="#" class="product-categories"><strong>CategoryA</strong></a></div>   
           <div class="text">Describe your product2 including its features...</div>
           <p class="product-price"><b><i>Price: Rs. 4000</i></b></p>
       </div>
